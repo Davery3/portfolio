@@ -1,6 +1,6 @@
 {
   "name": "Portfolio",
-  "homepage": "https://github.com/cobidev/simplefolio#readme",
+  "homepage":"https://davery3.github.io/portfolio",
   "version": "1.0.1",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
   },
   "repository": {
     "type": "git",
