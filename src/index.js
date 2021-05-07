@@ -1,5 +1,6 @@
 import initTilt from "./js/tilt";
 import initSr from "./js/sr";
+import resume from "./assets/david-avery-resume.pdf";
 //import resume from "./assets/resume.pdf";//
 
 import "./style/main.scss";
