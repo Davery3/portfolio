@@ -7,8 +7,6 @@
   "scripts": {
     "start": "serve -s build",
     "build": "webpack --config webpack.prod.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",

@@ -11,6 +11,9 @@
 
    to open in local host run "start": "webpack-dev-server --config webpack.dev.js --open",
 
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
+
   If you want to publish website to github pages build minifiled file using "npm run predeploy", then rename "dist" folder to "build" folder, and then run "npm run deploy"
 -->
 <!DOCTYPE html>
