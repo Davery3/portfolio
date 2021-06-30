@@ -19,6 +19,7 @@ module.exports = {
               name: "[name].[hash].[ext]",
               outputPath: "assets",
               esModule: false,
+              interpolate: true
             },
           },
         ],
