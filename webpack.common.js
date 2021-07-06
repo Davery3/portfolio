@@ -1,4 +1,4 @@
-const Webpack = require("webpack");
+/*const Webpack = require("webpack");
 module.exports = {
   entry: {
     vendor: "./src/vendor.js",
@@ -19,6 +19,44 @@ module.exports = {
               name: "[name].[hash].[ext]",
               outputPath: "assets",
               esModule: false,
+            },
+          },
+        ],
+      },
+    ],
+  },
+  // This config allows to use jQuery $ sign
+  plugins: [
+    new Webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+    }),
+  ],
+};*/
+const Webpack = require("webpack");
+
+module.exports = {
+  entry: {
+    vendor: "./src/vendor.js",
+    main: "./src/index.js",
+  },
+  module: {
+    rules: [
+      {
+        test: /\.html$/,
+        use: ["html-loader"],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(pdf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
             },
           },
         ],
